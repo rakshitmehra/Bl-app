@@ -13,7 +13,7 @@ const Login = () => {
         e.preventDefault();
 
         try {
-            const res = await axios.post("https://bl-app-server.vercel.app/login", input);
+            const res = await axios.post("https://bl-app-server.vercel.app/api/v1/login", input);
             alert(res.data.message);
             localStorage.setItem("token", res.data.token);
             localStorage.setItem("username", res.data.name);

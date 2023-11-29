@@ -13,7 +13,7 @@ const Register = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post("https://bl-app-server.vercel.app/register", input); 
+            const res = await axios.post("https://bl-app-server.vercel.app/api/v1/register", input); 
             alert(res.data.message);
             navigate("/login");
         } catch (error) {
