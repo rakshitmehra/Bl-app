@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 
 // API routes
 
-app.use("/api/v1", authRoutes);
+app.use("/", authRoutes);
 
 
 app.listen(PORT, () => {
