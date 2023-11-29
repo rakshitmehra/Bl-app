@@ -13,7 +13,7 @@ const Login = () => {
         e.preventDefault();
 
         try {
-            const res = await axios.post("https://my-blog-backend-16m6.onrender.com/api/v1/user/login", input);
+            const res = await axios.post("https://bl-app-server.vercel.app/login", input);
             alert(res.data.message);
             localStorage.setItem("token", res.data.token);
             localStorage.setItem("username", res.data.name);
